@@ -11,6 +11,7 @@ Because the server configuration is implemented by yourself you are not forced t
 
 ### Example
 
+#### MyServerConfigurator
 ```go
 type MyServerConfigurator struct {
     listener net.Listener
@@ -48,6 +49,23 @@ func (sc *MyServerConfigurator) LogInfo(message string, port int) {
     log.Println(message)
 }
 
+```
+
+#### Usage
+
+```go
+serverConfigurator, err := NewMyServerConfigurator(8080)
+if err != nil {
+	log.Fatal(err)
+}
+
+server, err := boilerserv.StartServer(context.Background(), serverConfigurator)
+if err != nil {
+	log.Fatal(err)
+}
+
+// Block the routine
+_ = server.ListenAndHandleShutdown(context.Background())
 ```
 
 ## LICENSE
