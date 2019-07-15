@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-// ServerConfigurator is an interface which can be used to configure the server
+// ServerConfigurator is an interface which can be used to configure the server.
 type ServerConfigurator interface {
 	Listener() net.Listener
 	ConfigureRoutes() http.Handler
