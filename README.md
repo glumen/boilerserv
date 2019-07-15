@@ -1,4 +1,4 @@
-# boilerserv [![Build Status](https://travis-ci.org/pvormste/boilerserv.svg?branch=master)](https://travis-ci.org/pvormste/boilerserv)
+# boilerserv [![Build Status](https://travis-ci.org/pvormste/boilerserv.svg?branch=master)](https://travis-ci.org/pvormste/boilerserv) [![GoDoc](https://godoc.org/github.com/pvormste/boilerserv?status.svg)](https://godoc.org/github.com/pvormste/boilerserv)
 
 boilserv is a small library which helps you to setup an absolute boilerplate http server for go.
 It can start on any given port provided by a listener and shuts down gracefully.
@@ -25,7 +25,7 @@ func NewMyServerConfigurator(port int) (*MyServerConfigurator, error) {
 	
     return &MyServerConfigurator{
         listener: listener,
-    }
+    }, nil
 }
 
 func (sc MyServerConfigurator) Listener() net.Listener {
