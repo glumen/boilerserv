@@ -1,4 +1,4 @@
-module github.com/pvormste/boilerserv
+module github.com/glumen/boilerserv
 
 go 1.12
 
