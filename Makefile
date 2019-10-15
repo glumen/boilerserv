@@ -1,7 +1,7 @@
 export GOBIN = $(PWD)/bin
 
 GOLANGCI_LINT = $(GOBIN)/golangci-lint
-GOLANGCI_LINT_VERSION = v1.17.1
+GOLANGCI_LINT_VERSION = v1.19.1
 
 .PHONY: CI
 CI:lint test
