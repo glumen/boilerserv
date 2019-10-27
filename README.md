@@ -1,4 +1,4 @@
-# boilerserv [![Build Status](https://travis-ci.org/glumen/boilerserv.svg?branch=master)](https://travis-ci.org/pvormste/boilerserv) [![GoDoc](https://godoc.org/github.com/glumen/boilerserv?status.svg)](https://godoc.org/github.com/glumen/boilerserv)
+# boilerserv [![Build Status](https://travis-ci.org/glumen/boilerserv.svg?branch=master)](https://travis-ci.org/glumen/boilerserv) [![GoDoc](https://godoc.org/github.com/glumen/boilerserv?status.svg)](https://godoc.org/github.com/glumen/boilerserv)
 
 boilserv is a small library which helps you to setup an absolute boilerplate http server for go.
 It can start on any given port provided by a listener and shuts down gracefully.
